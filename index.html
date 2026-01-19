@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RegJS</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" href="./images/logo.png">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header id="header" class="header">
+        <a href="#"><img src="./images/logo.png" class="logo" alt="logo"></a>
+        <nav id="header-links" class="links">
+            <a href="#regexes">რეგულარული გამოსახულებები</a>
+            <a href="#fields">დატესტვა</a>
+            <a href="#about-us">ჩვენ შესახებ</a>
+        </nav>
+        <div class="dropdown">
+            <img src="./icons/burger-bar.png" id="burger-menu-icon" class="burger-menu-icon" alt="burger menu icon">
+            <div id="burger-menu-links"  class="dropdown-list"></div>
+        </div>
+    </header>
+
+    <main>
+        <section id="fields" class="fields">
+                <strong><p id="msg" class="msg" hidden></p></strong>
+                <div class="regex-field">
+                    <input id="user-regex" class="user-regex" placeholder="შეიყვანე რეგულარული გამოსახულება..."></input>
+                    
+                    <div class="options-buttons">            
+                        <div class="option">
+                            <input type="checkbox" id="all-occurrence-tick" class="tick">
+                            <span class="checkbox-title">ყველა შემხვედრი</span>
+                        </div>
+
+                        <div class="option">
+                            <input type="checkbox" id="case-insensitive-tick" class="tick">
+                            <span class="checkbox-title">მაღალი და დაბალი რეგისტრების ჩათვლით</span>
+                        </div>
+
+                        <img src="./icons/trash.png" id="clear-btn" class="icons" alt="clear button">
+            
+                    </div> 
+                    
+                </div>
+
+                <div class="text-fields">
+                    <textarea id="input-field" class="io-field" placeholder="შეიყვანე ტექსტი..."></textarea>                      
+                    <p id="output-field" class="io-field" hidden></p>
+                </div>
+        </section>
+
+        <section id="regexes" class="regexes"></section>
+    </main>
+
+    <footer id="about-us">
+        <span>ყველა უფლება დაცულია ©</span>
+        <span id="curr-year" class="curr-year">sample</span>
+    </footer>
+</body>
+</html>
