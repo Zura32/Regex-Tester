@@ -185,7 +185,7 @@ function runRegex(text, pattern) {
     obj = text.match(regXpr);
 
     if (obj == null) {
-      throwMessage(msg, "არაფერი მოიძებნა!");
+      throwMessage(msg, "არაფერი მოიძებნა!", "fail");
       return res;
     }
 
@@ -213,7 +213,7 @@ userRegex.addEventListener("input", () => {
         }
 
         if (text.length > 100000) {
-          throwMessage(msg, "შეყვანილი ტექსტის სიგრძე მეტია 10000-ზე!", "fail");
+          throwMessage(msg, "შეყვანილი ტექსტის სიგრძე მეტია 100000-ზე!", "fail");
           return;
         }
 
