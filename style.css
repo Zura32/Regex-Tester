@@ -218,7 +218,6 @@ main {
 .regexes {
     display: flex;
     flex-direction: column;
-    /* gap: 10px; */
     width: 70%;
     margin-top: 100px;
 }
